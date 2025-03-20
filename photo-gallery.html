@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">Opulent Bites</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Hotel-Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="photo-gallery.html">Photos</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+
+    <br><br><br><br><br>
+    <header>
+        <h1>Our Restaurant Gallery</h1>
+    </header>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="images/restaurant1.jpeg" alt="Restaurant Interior" onclick="openLightbox('images/restaurant1')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant2.jpeg" alt="Delicious Dish" onclick="openLightbox('images/restaurant2')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant3.jpeg" alt="Luxury Dining" onclick="openLightbox('images/restaurant3')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant4.jpeg" alt="Luxury Dining" onclick="openLightbox('images/restaurant4')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant5.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant6.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant7.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant8.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant9.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant10.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant11.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant12.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant13.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant14.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant15.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant16.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant17.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant18.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant19.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="images/restaurant20.jpeg" alt="Luxury Dining" onclick="openLightbox('images/photo3.jpg')">
+        </div>
+        
+        <!-- Add more images as needed -->
+    </section>
+
+    <!-- Lightbox Popup -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+        <button class="prev" onclick="prevImage()">&#10094;</button>
+        <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+    <footer style="background-color: #1a1a1a; color: white; padding: 40px 20px; text-align: center;">
+        <div style="max-width: 1200px; margin: auto;">
+            <h2 style="font-size: 24px; font-weight: bold;">Opulent Bites Hotel</h2>
+            <p style="margin: 10px 0; font-size: 16px; color: #bbbbbb;">Fine Dining | Exquisite Cuisine | Great Ambience</p>
+    
+            <div style="margin: 20px 0;">
+                <a href="index.html" style="color: #ffffff; text-decoration: none; margin: 0 15px;">Home</a>
+                <a href="about.html" style="color: #ffffff; text-decoration: none; margin: 0 15px;">About</a>
+                <a href="photo-gallery.html" style="color: #ffffff; text-decoration: none; margin: 0 15px;">Gallery</a>
+                <a href="services.html" style="color: #ffffff; text-decoration: none; margin: 0 15px;">Hotel-Menu</a>
+                <a href="contact.html" style="color: #ffffff; text-decoration: none; margin: 0 15px;">Contact</a>
+                <a href="reservation.html" style="color: #ffffff; text-decoration: none; margin: 0 15px;">Reservation</a>
+
+            </div>
+    
+            <div style="margin: 20px 0;">
+                <p style="margin: 5px 0; font-size: 14px; color: #bbbbbb;">📍 Location: Opulent Bites, 254, Piga Gama Pinto Road</p>
+                <p style="margin: 5px 0; font-size: 14px; color: #bbbbbb;">📞 Phone: +254 740 641 514</p>
+                <p style="margin: 5px 0; font-size: 14px; color: #bbbbbb;">📧 Email: www.opulentbites.com</p>
+            </div>
+    
+            <div style="margin: 20px 0;">
+                <a href="#" style="margin: 0 10px;"><img src="facebook-icon.png" alt="Facebook" width="24"></a>
+                <a href="#" style="margin: 0 10px;"><img src="instagram-icon.png" alt="Instagram" width="24"></a>
+                <a href="#" style="margin: 0 10px;"><img src="twitter-icon.png" alt="Twitter" width="24"></a>
+            </div>
+    
+            <p style="font-size: 14px; color: #bbbbbb; margin-top: 20px;">&copy; 2025 Opulent Bites Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
