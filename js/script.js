@@ -41,3 +41,8 @@ function nextImage() {
     currentImageIndex = (currentImageIndex + 1) % images.length;
     document.getElementById("lightbox-img").src = images[currentImageIndex].src;
 }
+
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+s
