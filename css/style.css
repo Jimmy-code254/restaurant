@@ -8,98 +8,76 @@ body {
 }
 
 /* Contact Form Styling */
+/* Contact Form Section */
 .contact-form {
-    max-width: 500px;
+    max-width: 600px;
     margin: 50px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    
-    /* Animation effect */
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 1s ease-out forwards;
+    animation: fadeInUp 0.8s ease-in-out forwards;
 }
 
+/* Section Title */
 .contact-form h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #b22222;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input, 
+/* Input and Textarea Styling */
+.contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: 0.3s;
-    box-shadow: inset 0px 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
 }
 
-.contact-form input:focus, 
+/* Focus Effect */
+.contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #b22222;
-    box-shadow: 0 0 5px rgba(178, 34, 34, 0.5);
+    border-color: #007bff;
     outline: none;
 }
 
+/* Textarea Specific Styling */
 .contact-form textarea {
     min-height: 120px;
     resize: vertical;
 }
 
+/* Submit Button */
 .contact-form button {
-    background: #b22222;
-    color: white;
+    width: 100%;
     padding: 12px;
+    background: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
     border: none;
-    font-size: 18px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
-    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
+/* Hover Effect on Button */
 .contact-form button:hover {
-    background: #8b1a1a;
-    box-shadow: 0px 4px 10px rgba(178, 34, 34, 0.4);
+    background: #0056b3;
     transform: scale(1.05);
 }
 
-/* Contact Info Section */
-.contact-info {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 18px;
-    color: #444;
-    background: rgba(178, 34, 34, 0.1);
-    border-radius: 5px;
-}
-
-/* Keyframe Animation for Smooth Entry */
+/* Fade-in Up Animation */
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
-
-
 
 /* Navbar Styling */
 .navbar {
@@ -484,5 +462,208 @@ button:hover {
 /* Animation */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* General Section Styling */
+.services {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Title Styling */
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Grid Layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Service Card Styling */
+.service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* Staggered Animation Delay for Cards */
+.service-item:nth-child(1) { animation-delay: 0.2s; }
+.service-item:nth-child(2) { animation-delay: 0.4s; }
+.service-item:nth-child(3) { animation-delay: 0.6s; }
+.service-item:nth-child(4) { animation-delay: 0.8s; }
+.service-item:nth-child(5) { animation-delay: 1s; }
+.service-item:nth-child(6) { animation-delay: 1.2s; }
+.service-item:nth-child(7) { animation-delay: 1.4s; }
+.service-item:nth-child(8) { animation-delay: 1.6s; }
+
+/* Hover Effect: Glow & Lift */
+.service-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid #007bff;
+}
+
+/* Image Styling */
+.service-item img {
+    width: 100%;
+    height: 180px; /* Set a fixed height */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.service-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Title Styling */
+.service-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #444;
+    font-weight: bold;
+}
+
+/* Text Styling */
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* General Room Section Styling */
+.rooms-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Room Card Styling */
+.room-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* Staggered Fade-in Effect */
+.room-card:nth-child(1) { animation-delay: 0.2s; }
+.room-card:nth-child(2) { animation-delay: 0.4s; }
+.room-card:nth-child(3) { animation-delay: 0.6s; }
+.room-card:nth-child(4) { animation-delay: 0.8s; }
+.room-card:nth-child(5) { animation-delay: 1s; }
+.room-card:nth-child(6) { animation-delay: 1.2s; }
+.room-card:nth-child(7) { animation-delay: 1.4s; }
+.room-card:nth-child(8) { animation-delay: 1.6s; }
+
+/* Hover Effect */
+.room-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Room Image Styling */
+.room-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 4px solid #007bff;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Image */
+.room-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Room Title */
+.room-card h2 {
+    font-size: 1.6rem;
+    margin: 15px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Description */
+.room-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+/* Price Styling */
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Booking Button */
+.book-btn {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Button Hover Effect */
+.book-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
